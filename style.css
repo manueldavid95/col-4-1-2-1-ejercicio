@@ -1,0 +1,116 @@
+
+/* reset de estilos */
+:root {
+    /* fuente */
+    --fuente_body: 'Poppins', sans-serif;
+
+    /* colores tarjetas */
+    --cyan: hsl(180, 62%, 55%);
+    --red: hsl(0, 78%, 62%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* colores neutrales */
+    --dark_blue: hsl(234, 12%, 34%);
+    --blue_gray: hsl(229, 6%, 66%);
+    --light_gray: hsl(0, 0%, 98%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+    /* 1.6rem = 16px */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente_body);
+    font-size: 1.5rem;
+    background: var(--light_gray);
+}
+
+.container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* header */
+.header {
+    width: 90%;
+    min-width: 288px;
+    max-width: 511px;
+    margin-top: 8.6rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 82px;
+    text-align: center;
+}
+
+.header h2 {
+    font-weight: 200;   
+    color: var(--blue_gray);
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: var(--dark_blue);
+    margin-top: 24px;
+    margin-bottom: 33px;
+}
+
+.header p {
+    font-weight: 200;
+    color: var(--blue_gray);
+}
+
+/* grid-item */
+.grid-item {
+    position: relative;
+    min-width: 288px;
+    max-width: 344px;
+    height: 222px;
+    padding: 27px;
+    margin-bottom: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--blue_gray);
+}
+
+.grid-item h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--dark_blue);
+}
+
+.grid-item p {
+    color: var(--blue_gray);
+}
+
+.grid-item img {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    right: 1.5rem;
+    bottom: 1rem;
+}
+
+.color_cyan {border-top: 5px solid var(--cyan);}
+
+.color_red {border-top: 5px solid var(--red);}
+
+.color_orange {border-top: 5px solid var(--orange);}
+
+.color_blue {border-top: 5px solid var(--blue);}

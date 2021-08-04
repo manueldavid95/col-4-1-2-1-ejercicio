@@ -1,0 +1,21 @@
+.header {
+    margin-bottom: 55px;
+}
+
+/* grid-container */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.grid-item {
+    margin-right: initial;
+    margin-left: initial;
+    margin-bottom: 0;
+}
+
+.grid-item-vertical .grid-item {
+    margin-bottom: 25px;
+}
